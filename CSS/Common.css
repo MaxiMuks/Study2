@@ -7,8 +7,8 @@
     color: #fff;
 }
 
-.redBackGround {
-    background-color: red;
+.whiteBackGround {
+    background-color: white;
 }
 
 /* 
@@ -65,3 +65,16 @@
 .whiteBox20rem {
     height: 20rem;
 }
+
+.centerTextBox10 {
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 15rem;
+    text-align: center;
+}
+
+.subject {
+    padding-top: 2rem;
+    padding-left: 6rem;
+}
+

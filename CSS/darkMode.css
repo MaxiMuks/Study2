@@ -1,0 +1,85 @@
+:root[color-theme="red"] {
+    --bacaground: #830000;
+    --boxColor: #fff;
+}
+
+:root[color-theme="dark"] {
+    --bacaground: #000;
+    --boxColor: #B5B9B6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    text-align: right;
+    padding-top: 1rem;
+    padding-right: 3rem;
+}
+
+header > span {
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: #830000;
+}
+
+#smallCircle {
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    top: -5rem;
+    left: -8rem;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+#bigCircle {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    bottom: -5rem;
+    right: -18rem;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.flexAlign {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexAlignStart{
+    display: flex;
+    align-items: center;
+}
+
+.flexAlign > div {
+    margin-left: 4rem;
+}
+
+.flexAlign > div > div {
+    margin-bottom: 1rem;
+}
+
+.projectBox {
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
