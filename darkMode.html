@@ -11,18 +11,21 @@
 </head>
 <body>
     <div>
+        <div id="menuHeader"></div>
         <section id="wrap">
             <header>
-                <span id="darkMode" class="whiteFont">DARK</span>
+                <span id="darkMode" class="whiteFont">AWAY</span>
             </header>
-            <div id="smallCircle" class="redBackGround"></div>
-            <div class="fontSize10rem whiteFont subject">
-                We Are
+            <div id="smallCircle"></div>
+            <div id="word">
+                <div class="fontSize10rem whiteFont subject">
+                    WE ARE
+                </div>
+                <div class="fontSize10rem whiteFont subject line80">
+                    LIVERPOOL
+                </div>
             </div>
-            <div class="fontSize10rem whiteFont subject line80">
-                Liverpool
-            </div>
-            <div id="bigCircle" class="redBackGround"></div>
+            <div id="bigCircle"></div>
         </section>
         <section>
             <div class="whiteFont fontSize2rem bold">
@@ -50,5 +53,31 @@
             <footer></footer>
         </section>
     </div>
+    <script>
+        window.onscroll = function () {
+            if(document.body.scrollTop > 48 || document.documentElement.scrollTop > 48) {
+                document.getElementById("menuHeader").style.display = "block";
+            } else {
+                document.getElementById("menuHeader").style.display = "none";
+            }
+        };     
+
+        //최상위 root에 이 속성을 셋팅
+        document.documentElement.setAttribute("color-theme", "home");
+
+        let darkMode = document.getElementById("darkMode");
+            darkMode.addEventListener("click", (e) => {
+                // e -> 이벤트가 일어난 객체
+                // e.target -> 일어난 객체를 선택
+                // e.target.innerText -> 일어난 객체를 선택해서 innerText 속성을 선택
+                if(e.target.innerText === "AWAY") {
+                    document.documentElement.setAttribute("color-theme", "away");
+                    e.target.innerText = "HOME";
+                } else {
+                    document.documentElement.setAttribute("color-theme", "home");
+                    e.target.innerText = "AWAY";
+                }
+            });
+    </script>
 </body>
 </html>

@@ -1,13 +1,12 @@
-:root[color-theme="red"] {
-    --bacaground: #830000;
+:root[color-theme="HOME"] {
+    --backGround: #830000;
     --boxColor: #fff;
 }
 
-:root[color-theme="dark"] {
-    --bacaground: #000;
-    --boxColor: #B5B9B6;
+:root[color-theme="AWAY"] {
+    --backGround: #F5F1F1;
+    --boxColor: #000;
 }
-
 
 * {
     margin: 0;
@@ -34,7 +33,7 @@ header > span {
 section {
     width: 100%;
     height: 100vh;
-    background-color: #830000;
+    background-color: var(--backGround);
 }
 
 #smallCircle {
@@ -43,18 +42,30 @@ section {
     height: 35rem;
     top: -5rem;
     left: -8rem;
-    opacity: 0.2;
+    opacity: 1;
     border-radius: 50%;
+    background-color: #fff;
+    background-image: url(/study2/Img/Logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 4;
 }
 
 #bigCircle {
     position: absolute;
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     bottom: -5rem;
-    right: -18rem;
-    opacity: 0.2;
+    right: -11rem;
+    opacity: 1;
     border-radius: 50%;
+    background-color: #fff;
+    background-image: url(/study2/Img/kops.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
 }
 
 .flexAlign {
@@ -82,4 +93,18 @@ section {
     background-color: #fff;
     font-size: 3rem;
     font-weight: bold;
+}
+
+#menuHeader {
+    z-index: 100;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--boxColor);
+    opacity: 0.5;
+    position: fixed;
+    display: none;
+}
+
+#word {
+    z-index: 5;
 }

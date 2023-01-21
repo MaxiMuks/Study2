@@ -1,14 +1,28 @@
 /* 공통적인 부분 */
+
+/* root : 최상위 */
+:root[color-theme="home"] {
+    --backGround: #830000;
+    --boxColor: #fff;
+    --fontColor: #fff;
+}
+
+:root[color-theme="away"] {
+    --backGround: #F5F1F1;
+    --boxColor: #000;
+    --fontColor: #000;
+}
+
 .bold {
     font-weight: bold;
 }
 
 .whiteFont {
-    color: #fff;
+    color: var(--fontColor)
 }
 
 .whiteBackGround {
-    background-color: white;
+    background-color: var(--boxColor);
 }
 
 /* 
@@ -75,6 +89,6 @@
 
 .subject {
     padding-top: 2rem;
-    padding-left: 6rem;
+    padding-left: 15rem;
 }
 
