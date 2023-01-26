@@ -5,7 +5,7 @@
 
 :root[color-theme="AWAY"] {
     --backGround: #F5F1F1;
-    --boxColor: #000;
+    --boxColor: #fff;
 }
 
 * {
@@ -112,4 +112,11 @@ section {
 #word {
     position: relative;
     z-index: 5;
+}
+
+.ynwa {
+    display: inline-flex;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
 }
