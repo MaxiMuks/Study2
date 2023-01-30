@@ -120,3 +120,13 @@ section {
     height: 50px;
     line-height: 50px;
 }
+
+.cups {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.cups > img {
+    width: 150px;
+}
